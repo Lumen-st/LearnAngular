@@ -4,15 +4,17 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MenuHomeComponent } from './menu-home/menu-home.component';
 import { HeroesComponent } from './heroes/heroes.component';
+import { FormsModule  } from "@angular/forms";
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuHomeComponent,
-    HeroesComponent
+    HeroesComponent 
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
