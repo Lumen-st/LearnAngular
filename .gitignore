@@ -37,3 +37,6 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# learning packges creating
+npm-publish-github-packages.yml
