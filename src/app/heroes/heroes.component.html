@@ -1,8 +1,14 @@
 <h2>List Heroes</h2>
 
+<div *ngIf="selectedHero">
+  <div>{{selectedHero.name | uppercase }} Details</div>
+  <div> ID: {{selectedHero.id | uppercase }}</div>
+</div>
+
+
 <ul class="heroes">
   <li *ngFor="let hero of heroes">
-    <button type="button">
+    <button type="button"  (click)="onSelect(hero)">
       <span class="badge">{{hero.id}}</span>
       <span class="name">{{hero.name}}</span>
     </button>
