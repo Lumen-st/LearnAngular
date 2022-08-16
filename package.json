@@ -4,6 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start-poll": "ng serve --poll 5000",
+    "time:server": "ng serve --poll 2000",
+    "start:port": "ng serve -o --port 3333",
+    "start-docker": "npm install && ng serve --poll 5000 --host=0.0.0.0",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -44,5 +48,12 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.1.1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/repository/npm-grupo//"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lumen-st/LearnAngular"
   }
 }
