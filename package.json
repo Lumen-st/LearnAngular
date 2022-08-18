@@ -11,7 +11,11 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:new": "ng build --configuration=dev --prod --base-href /padm/",
+    "buildtest": "ng build --configuration=test --prod --base-href /padm/",
+    "buildhml": "ng build --configuration=hml --prod --base-href /padm/",
+    "buildprod": "ng build --prod --base-href /padm/"
   },
   "private": true,
   "dependencies": {
